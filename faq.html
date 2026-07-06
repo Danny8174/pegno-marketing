@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ — Pegno</title>
+  <meta name="description" content="Frequently asked questions about Pegno — how escrow works, fees, safety, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue: #1a56db;
+      --blue-dark: #1a3a8f;
+      --blue-light: #ebf2ff;
+      --bg: #edf0f4;
+      --card: #f8f9fb;
+      --border: #d8dde6;
+      --text: #111827;
+      --muted: #6b7280;
+      --radius: 1rem;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+      background: var(--bg); color: var(--text);
+      -webkit-font-smoothing: antialiased; min-height: 100vh;
+    }
+    a { text-decoration: none; color: var(--blue); }
+    a:hover { text-decoration: underline; }
+    img { display: block; max-width: 100%; }
+    header {
+      position: sticky; top: 0; z-index: 40;
+      background: rgba(237,240,244,0.88);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1100px; margin: 0 auto;
+      padding: 0 1.5rem; height: 64px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 0.75rem; color: var(--text); }
+    .nav-logo img { height: 40px; width: 40px; object-fit: contain; }
+    .nav-logo span { font-size: 1.5rem; font-weight: 900; letter-spacing: -0.03em; }
+    .nav-links { display: none; align-items: center; gap: 1.5rem; }
+    @media (min-width: 640px) { .nav-links { display: flex; } }
+    .nav-links a { font-size: 0.875rem; font-weight: 600; color: var(--muted); }
+    .nav-links a:hover { color: var(--text); text-decoration: none; }
+    .nav-cta {
+      background: var(--blue); color: #fff;
+      padding: 0.5rem 1.25rem; border-radius: 9999px;
+      font-size: 0.875rem; font-weight: 600; transition: opacity 0.15s;
+    }
+    .nav-cta:hover { opacity: 0.88; text-decoration: none; color: #fff; }
+    .page-hero {
+      background: var(--blue); color: #fff;
+      padding: 4rem 1.5rem 3rem; text-align: center;
+    }
+    .page-hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 900; letter-spacing: -0.03em;
+    }
+    .page-hero p { margin-top: 1rem; opacity: 0.8; font-size: 1.125rem; }
+    .content {
+      max-width: 760px; margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+    .card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 2rem; margin-bottom: 1.5rem;
+    }
+    .card h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--text); }
+    .card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text); }
+    .card p { color: var(--muted); line-height: 1.7; margin-bottom: 0.75rem; }
+    .card p:last-child { margin-bottom: 0; }
+    .card ul { color: var(--muted); line-height: 1.7; padding-left: 1.5rem; margin-bottom: 0.75rem; }
+    .card li { margin-bottom: 0.4rem; }
+    .section-label {
+      font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--blue); margin-bottom: 0.5rem;
+    }
+    footer {
+      background: var(--card); border-top: 1px solid var(--border); padding: 3rem 1.5rem;
+    }
+    .footer-inner { max-width: 1100px; margin: 0 auto; }
+    .footer-top {
+      display: flex; flex-direction: column; gap: 2rem; align-items: flex-start;
+    }
+    @media (min-width: 768px) {
+      .footer-top { flex-direction: row; justify-content: space-between; align-items: flex-start; }
+    }
+    .footer-logo { display: flex; align-items: center; gap: 0.75rem; color: var(--text); }
+    .footer-logo img { height: 32px; width: 32px; object-fit: contain; }
+    .footer-logo span { font-size: 1.25rem; font-weight: 900; letter-spacing: -0.03em; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .footer-links a { font-size: 0.875rem; color: var(--muted); }
+    .footer-links a:hover { color: var(--text); text-decoration: none; }
+    .footer-bottom {
+      margin-top: 2rem; padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.75rem; color: var(--muted); line-height: 1.8;
+    }
+</style>
+</head>
+<body><header>
+  <div class="nav-inner">
+    <a href="/index.html" class="nav-logo">
+      <img src="pegno-logo.png" alt="Pegno" />
+      <span>Pegno</span>
+    </a>
+    <div style="display:flex;align-items:center;gap:1.5rem;">
+      <div class="nav-links">
+        <a href="/faq.html">FAQ</a>
+        <a href="/support.html">Support</a>
+        <a href="/developers.html">API</a>
+        <a href="https://app.pegno.co" target="_blank" rel="noopener noreferrer">Sign In</a>
+      </div>
+      <a href="https://apps.apple.com/app/pegno/id6772053022" target="_blank" rel="noopener noreferrer" class="nav-cta">Download</a>
+    </div>
+  </div>
+</header>
+<div class="page-hero">
+  <h1>Frequently Asked Questions</h1>
+  <p>Everything you need to know about Pegno.</p>
+</div>
+<div class="content">
+<div class="card"><h2>What is Pegno?</h2><p>Pegno is a milestone-based payment escrow platform for service transactions. It holds funds securely until agreed milestones are completed, protecting both the client paying for a service and the provider delivering it.</p></div>
+<div class="card"><h2>How does escrow work?</h2><p>When a deal is created, the client deposits the agreed amount into a safeguarded escrow account. The money is held securely and only released to the provider when each milestone is marked complete and approved. Neither party can access the funds until the conditions are met.</p></div>
+<div class="card"><h2>Is Pegno regulated?</h2><p>Pegno UK Ltd has applied to be registered with the Financial Conduct Authority (FCA) as a Small Payment Institution (FRN: 1056758) under the Payment Services Regulations 2017. Our application is currently in progress with a named case officer. Client funds are held in safeguarded accounts separate from Pegno's own funds.</p></div>
+<div class="card"><h2>Is my money safe?</h2><p>Yes. All client funds are held in designated safeguarding accounts at authorised credit institutions, separate from Pegno's own money. This means your escrow funds are protected under the Payment Services Regulations 2017 and are not at risk if Pegno ceases to trade.</p></div>
+<div class="card"><h2>How much does Pegno cost?</h2><p>Pegno charges a 2.5% platform fee on completed transactions. This fee is deducted at the time of payment release. There is no charge to create an account or create a deal. Fees are shown clearly before you fund a deal.</p></div>
+<div class="card"><h2>Who can use Pegno?</h2><p>Pegno is designed for any service transaction — tradies, plumbers, electricians, builders, cleaners, removalists, mechanics, landscapers, and any professional service provider. Clients hiring any of these providers can also use Pegno to pay safely.</p></div>
+<div class="card"><h2>How do I create a deal?</h2><p>Download the Pegno app, sign up for free, and tap 'Create a Deal'. Add the job title, total amount, and milestones. Share the deal link or QR code with your client. They fund it and you begin work.</p></div>
+<div class="card"><h2>What happens if there's a dispute?</h2><p>Pegno has a three-tier dispute resolution process. First, both parties attempt to resolve directly. If unresolved, Pegno reviews the dispute and makes a determination. For regulated complaints, our IDR (Internal Dispute Resolution) process applies and you can escalate to the relevant financial ombudsman.</p></div>
+<div class="card"><h2>How do I delete my account?</h2><p>Go to Account Settings in the app, scroll to the Danger Zone section, and select Delete Account. You will be asked to type DELETE to confirm. Note that accounts with active deals cannot be deleted until those deals are resolved.</p></div>
+<div class="card"><h2>Which countries does Pegno support?</h2><p>Pegno currently operates in Australia and the United Kingdom, with the United States and Singapore coming soon. The region is set per transaction and Pegno routes to the appropriate payment rails for each jurisdiction.</p></div>
+<div style="text-align:center;margin-top:2rem;">
+  <p style="color:var(--muted);margin-bottom:1.5rem;">Still have questions? We're here to help.</p>
+  <a href="/support.html" style="background:var(--blue);color:#fff;padding:0.75rem 2rem;border-radius:9999px;font-weight:600;font-size:1rem;">Contact Support</a>
+</div>
+</div>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="pegno-logo.png" alt="Pegno" />
+        <span>Pegno</span>
+      </div>
+      <div class="footer-links">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/support.html">Support</a>
+        <a href="https://app.pegno.co" target="_blank" rel="noopener noreferrer">Sign In</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Pegno UK Ltd (Company No. 17169218) · Registered in England and Wales</p>
+      <p>Registered Office: 167-169 Great Portland Street, London W1W 5PF</p>
+      <p>FCA registration pending as a Small Payment Institution (FRN: 1056758) under the Payment Services Regulations 2017</p>
+      <p style="margin-top:0.75rem;">© 2026 Pegno UK Ltd. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+</body></html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Pegno</title>
+  <meta name="description" content="Pegno Privacy Policy — how we collect, use, and protect your personal data." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue: #1a56db;
+      --blue-dark: #1a3a8f;
+      --blue-light: #ebf2ff;
+      --bg: #edf0f4;
+      --card: #f8f9fb;
+      --border: #d8dde6;
+      --text: #111827;
+      --muted: #6b7280;
+      --radius: 1rem;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+      background: var(--bg); color: var(--text);
+      -webkit-font-smoothing: antialiased; min-height: 100vh;
+    }
+    a { text-decoration: none; color: var(--blue); }
+    a:hover { text-decoration: underline; }
+    img { display: block; max-width: 100%; }
+    header {
+      position: sticky; top: 0; z-index: 40;
+      background: rgba(237,240,244,0.88);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1100px; margin: 0 auto;
+      padding: 0 1.5rem; height: 64px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 0.75rem; color: var(--text); }
+    .nav-logo img { height: 40px; width: 40px; object-fit: contain; }
+    .nav-logo span { font-size: 1.5rem; font-weight: 900; letter-spacing: -0.03em; }
+    .nav-links { display: none; align-items: center; gap: 1.5rem; }
+    @media (min-width: 640px) { .nav-links { display: flex; } }
+    .nav-links a { font-size: 0.875rem; font-weight: 600; color: var(--muted); }
+    .nav-links a:hover { color: var(--text); text-decoration: none; }
+    .nav-cta {
+      background: var(--blue); color: #fff;
+      padding: 0.5rem 1.25rem; border-radius: 9999px;
+      font-size: 0.875rem; font-weight: 600; transition: opacity 0.15s;
+    }
+    .nav-cta:hover { opacity: 0.88; text-decoration: none; color: #fff; }
+    .page-hero {
+      background: var(--blue); color: #fff;
+      padding: 4rem 1.5rem 3rem; text-align: center;
+    }
+    .page-hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 900; letter-spacing: -0.03em;
+    }
+    .page-hero p { margin-top: 1rem; opacity: 0.8; font-size: 1.125rem; }
+    .content {
+      max-width: 760px; margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+    .card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 2rem; margin-bottom: 1.5rem;
+    }
+    .card h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--text); }
+    .card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text); }
+    .card p { color: var(--muted); line-height: 1.7; margin-bottom: 0.75rem; }
+    .card p:last-child { margin-bottom: 0; }
+    .card ul { color: var(--muted); line-height: 1.7; padding-left: 1.5rem; margin-bottom: 0.75rem; }
+    .card li { margin-bottom: 0.4rem; }
+    .section-label {
+      font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--blue); margin-bottom: 0.5rem;
+    }
+    footer {
+      background: var(--card); border-top: 1px solid var(--border); padding: 3rem 1.5rem;
+    }
+    .footer-inner { max-width: 1100px; margin: 0 auto; }
+    .footer-top {
+      display: flex; flex-direction: column; gap: 2rem; align-items: flex-start;
+    }
+    @media (min-width: 768px) {
+      .footer-top { flex-direction: row; justify-content: space-between; align-items: flex-start; }
+    }
+    .footer-logo { display: flex; align-items: center; gap: 0.75rem; color: var(--text); }
+    .footer-logo img { height: 32px; width: 32px; object-fit: contain; }
+    .footer-logo span { font-size: 1.25rem; font-weight: 900; letter-spacing: -0.03em; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .footer-links a { font-size: 0.875rem; color: var(--muted); }
+    .footer-links a:hover { color: var(--text); text-decoration: none; }
+    .footer-bottom {
+      margin-top: 2rem; padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.75rem; color: var(--muted); line-height: 1.8;
+    }
+</style>
+</head>
+<body><header>
+  <div class="nav-inner">
+    <a href="/index.html" class="nav-logo">
+      <img src="pegno-logo.png" alt="Pegno" />
+      <span>Pegno</span>
+    </a>
+    <div style="display:flex;align-items:center;gap:1.5rem;">
+      <div class="nav-links">
+        <a href="/faq.html">FAQ</a>
+        <a href="/support.html">Support</a>
+        <a href="/developers.html">API</a>
+        <a href="https://app.pegno.co" target="_blank" rel="noopener noreferrer">Sign In</a>
+      </div>
+      <a href="https://apps.apple.com/app/pegno/id6772053022" target="_blank" rel="noopener noreferrer" class="nav-cta">Download</a>
+    </div>
+  </div>
+</header>
+<div class="page-hero">
+  <h1>Privacy Policy</h1>
+  <p>Last updated: July 2026</p>
+</div>
+<div class="content">
+  <div class="card">
+    <h2>1. Who we are</h2>
+    <p>Pegno UK Ltd (Company No. 17169218), registered at 167-169 Great Portland Street, London W1W 5PF ("Pegno", "we", "us", "our") is the data controller for personal data processed through the Pegno platform.</p>
+    <p>FCA registration pending as a Small Payment Institution (FRN: 1056758) under the Payment Services Regulations 2017.</p>
+    <p>Contact: <a href="mailto:privacy@pegno.app">privacy@pegno.app</a></p>
+  </div>
+  <div class="card">
+    <h2>2. Data we collect</h2>
+    <ul>
+      <li><strong>Account data:</strong> Name, email address, phone number, user ID</li>
+      <li><strong>Identity verification data:</strong> Government-issued ID, selfie/biometric data (for KYC compliance)</li>
+      <li><strong>Financial data:</strong> Bank account details, transaction history, payment information</li>
+      <li><strong>Deal data:</strong> Job descriptions, milestone details, messages between parties</li>
+      <li><strong>Device data:</strong> IP address, device type, operating system, app version</li>
+      <li><strong>Communications:</strong> Support messages, dispute submissions, in-app messages</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2>3. How we use your data</h2>
+    <ul>
+      <li>To provide and operate the Pegno escrow platform</li>
+      <li>To verify your identity and comply with AML/CTF obligations</li>
+      <li>To process payments and manage escrow transactions</li>
+      <li>To resolve disputes and handle complaints</li>
+      <li>To comply with our regulatory obligations under the Payment Services Regulations 2017</li>
+      <li>To send transactional emails and account notifications</li>
+      <li>To improve and develop the platform</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2>4. Legal basis for processing</h2>
+    <p>We process your personal data on the following legal bases under the UK GDPR:</p>
+    <ul>
+      <li><strong>Contract:</strong> Processing necessary to provide the Pegno service you have signed up for</li>
+      <li><strong>Legal obligation:</strong> Processing required to comply with the Payment Services Regulations 2017, Money Laundering Regulations 2017, and other applicable law</li>
+      <li><strong>Legitimate interests:</strong> Fraud prevention, security, and platform improvement</li>
+      <li><strong>Consent:</strong> Marketing communications (where applicable)</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2>5. Data sharing</h2>
+    <p>We share your data only where necessary:</p>
+    <ul>
+      <li><strong>Payment partners:</strong> Banking and payment rail providers for fund processing and safeguarding</li>
+      <li><strong>KYC providers:</strong> Identity verification service providers</li>
+      <li><strong>Cloud infrastructure:</strong> Supabase (database and authentication), AWS (email delivery)</li>
+      <li><strong>Regulators:</strong> FCA, HMRC, and law enforcement where legally required</li>
+    </ul>
+    <p>We do not sell your personal data to third parties.</p>
+  </div>
+  <div class="card">
+    <h2>6. Data retention</h2>
+    <p>We retain your data for as long as your account is active and for a minimum of 5 years after account closure, in accordance with our AML/CTF obligations under the Money Laundering Regulations 2017.</p>
+  </div>
+  <div class="card">
+    <h2>7. Your rights</h2>
+    <p>Under the UK GDPR, you have the right to:</p>
+    <ul>
+      <li>Access your personal data</li>
+      <li>Correct inaccurate data</li>
+      <li>Request deletion of your data (subject to legal retention obligations)</li>
+      <li>Object to processing</li>
+      <li>Data portability</li>
+      <li>Withdraw consent (where processing is based on consent)</li>
+    </ul>
+    <p>To exercise any of these rights, email <a href="mailto:privacy@pegno.app">privacy@pegno.app</a>.</p>
+    <p>You also have the right to lodge a complaint with the Information Commissioner's Office (ICO) at <a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer">ico.org.uk</a>.</p>
+  </div>
+  <div class="card">
+    <h2>8. Account deletion</h2>
+    <p>You can delete your account from within the Pegno app via Account Settings → Danger Zone → Delete Account. Accounts with active deals cannot be deleted until those deals are resolved. Upon deletion, your personal data will be anonymised or deleted in accordance with our retention policy.</p>
+  </div>
+  <div class="card">
+    <h2>9. Contact us</h2>
+    <p>For privacy-related enquiries: <a href="mailto:privacy@pegno.app">privacy@pegno.app</a></p>
+    <p>Pegno UK Ltd, 167-169 Great Portland Street, London W1W 5PF</p>
+  </div>
+</div>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="pegno-logo.png" alt="Pegno" />
+        <span>Pegno</span>
+      </div>
+      <div class="footer-links">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/support.html">Support</a>
+        <a href="https://app.pegno.co" target="_blank" rel="noopener noreferrer">Sign In</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Pegno UK Ltd (Company No. 17169218) · Registered in England and Wales</p>
+      <p>Registered Office: 167-169 Great Portland Street, London W1W 5PF</p>
+      <p>FCA registration pending as a Small Payment Institution (FRN: 1056758) under the Payment Services Regulations 2017</p>
+      <p style="margin-top:0.75rem;">© 2026 Pegno UK Ltd. All rights reserved.</p>
+    </div>
+  </div>
+</footer></body></html>
